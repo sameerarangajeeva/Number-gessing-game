@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(48, 15%, 81%);
+}
+
+.card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 440px;
+    padding: 40px 36px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #1e3a5f;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 15px;
+    color: #333333;
+    margin-bottom: 14px;
+}
+
+#txtNumber {
+    width: 100%;
+    max-width: 320px;
+    height: 46px;
+    padding: 0 14px;
+    font-size: 15px;
+    color: #222;
+    border: 1px solid #4a5568;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#txtNumber:focus {
+    border-color: #1e3a5f;
+    box-shadow: 0 0 0 2px rgba(30, 58, 95, 0.15);
+}
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="button"] {
+    background-color: #243342;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #1a2530;
+}
+
+input[type="button"]:active {
+    transform: scale(0.98);
+}
+
+.card p:last-of-type {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1f2937;
+}
