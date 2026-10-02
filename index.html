@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>game</title>
+        <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    
+    <div class="card">
+        <h1>Guess A Number</h1>
+        <p>A number between 1-10</p>
+        
+        <input type="text" id="txtNumber" placeholder="Enter your Number">
+
+        
+        
+        <div class="button-group">
+            <input type="button" value="Check" onclick="checkNumberOnAction()">
+            <input type="button" value="Restart" onclick="restartGame()">
+        </div>
+
+        <p>The number is : </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/app.js"></script>
 </body>
 </html>
